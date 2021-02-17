@@ -28,3 +28,49 @@
 [1613561017] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
 [1613561017] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
 [1613561017] wproc:   stderr line 01: sendmail: Cannot open mailhub:25
+[1613564170] Auto-save of retention data completed successfully.
+[1613564612] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613564617] wproc: NOTIFY job 33 from worker Core Worker 48 is a non-check helper but exited with return code 1
+[1613564617] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1613564617] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613564617] wproc:   stderr line 01: sendmail: Cannot open mailhub:25
+[1613566769] Caught SIGTERM, shutting down...
+[1613566769] Successfully shutdown... (PID=22)
+[1613566773] Nagios 4.4.6 starting... (PID=19)
+[1613566773] Local time is Wed Feb 17 12:59:33 UTC 2021
+[1613566773] LOG VERSION: 2.0
+[1613566773] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613566773] qh: core query handler registered
+[1613566773] qh: echo service query handler registered
+[1613566773] qh: help for the query handler registered
+[1613566773] wproc: Successfully registered manager as @wproc with query handler
+[1613566773] wproc: Registry request: name=Core Worker 91;pid=91
+[1613566773] wproc: Registry request: name=Core Worker 93;pid=93
+[1613566773] wproc: Registry request: name=Core Worker 92;pid=92
+[1613566773] wproc: Registry request: name=Core Worker 90;pid=90
+[1613566773] Warning: Duplicate definition found for service 'Current Load' on host 'localhost' (config file '/opt/nagios/etc/objects/localhost.cfg', starting on line 112)
+[1613566773] Successfully launched command file worker with pid 99
+[1613566853] SERVICE ALERT: viewadmin110;HTTP;CRITICAL;SOFT;1;connect to address 10.250.10.2 and port 80: Connection refused
+[1613566913] SERVICE ALERT: viewadmin110;HTTP;CRITICAL;SOFT;2;connect to address 10.250.10.2 and port 80: Connection refused
+[1613566973] SERVICE ALERT: viewadmin110;HTTP;CRITICAL;SOFT;3;connect to address 10.250.10.2 and port 80: Connection refused
+[1613567013] SERVICE ALERT: viewadmin110;Swap Usage;CRITICAL;SOFT;1;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613567033] SERVICE ALERT: viewadmin110;HTTP;CRITICAL;HARD;4;connect to address 10.250.10.2 and port 80: Connection refused
+[1613567073] SERVICE ALERT: viewadmin110;Swap Usage;CRITICAL;SOFT;2;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613567133] SERVICE ALERT: viewadmin110;Swap Usage;CRITICAL;SOFT;3;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613567193] SERVICE NOTIFICATION: nagiosadmin;viewadmin110;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613567193] SERVICE ALERT: viewadmin110;Swap Usage;CRITICAL;HARD;4;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613567198] wproc: NOTIFY job 7 from worker Core Worker 92 is a non-check helper but exited with return code 1
+[1613567198] wproc:   host=viewadmin110; service=Swap Usage; contact=nagiosadmin
+[1613567198] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613567198] wproc:   stderr line 01: sendmail: Cannot open mailhog:1025
+[1613568212] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613568217] wproc: NOTIFY job 22 from worker Core Worker 91 is a non-check helper but exited with return code 1
+[1613568217] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1613568217] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613568217] wproc:   stderr line 01: sendmail: Cannot open mailhog:1025
+[1613570373] Auto-save of retention data completed successfully.
+[1613570845] SERVICE NOTIFICATION: nagiosadmin;viewadmin110;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613570850] wproc: NOTIFY job 59 from worker Core Worker 90 is a non-check helper but exited with return code 1
+[1613570850] wproc:   host=viewadmin110; service=Swap Usage; contact=nagiosadmin
+[1613570850] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613570850] wproc:   stderr line 01: sendmail: Cannot open mailhog:1025
