@@ -74,3 +74,33 @@
 [1613570850] wproc:   host=viewadmin110; service=Swap Usage; contact=nagiosadmin
 [1613570850] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
 [1613570850] wproc:   stderr line 01: sendmail: Cannot open mailhog:1025
+[1613571812] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613571817] wproc: NOTIFY job 73 from worker Core Worker 92 is a non-check helper but exited with return code 1
+[1613571817] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1613571817] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613571817] wproc:   stderr line 01: sendmail: Cannot open mailhog:1025
+[1613572149] EXTERNAL COMMAND: SEND_CUSTOM_HOST_NOTIFICATION;localhost;0;Nagios Admin;test
+[1613572149] HOST NOTIFICATION: nagiosadmin;localhost;CUSTOM (UP);notify-host-by-email;PING OK - Packet loss = 0%, RTA = 0.10 ms;Nagios Admin;test
+[1613573447] Caught SIGTERM, shutting down...
+[1613573447] Successfully shutdown... (PID=19)
+[1613573450] Nagios 4.4.6 starting... (PID=18)
+[1613573450] Local time is Wed Feb 17 14:50:50 UTC 2021
+[1613573450] LOG VERSION: 2.0
+[1613573450] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613573450] qh: core query handler registered
+[1613573450] qh: echo service query handler registered
+[1613573450] qh: help for the query handler registered
+[1613573450] wproc: Successfully registered manager as @wproc with query handler
+[1613573450] wproc: Registry request: name=Core Worker 24;pid=24
+[1613573450] wproc: Registry request: name=Core Worker 21;pid=21
+[1613573450] wproc: Registry request: name=Core Worker 23;pid=23
+[1613573450] wproc: Registry request: name=Core Worker 22;pid=22
+[1613573450] Warning: Duplicate definition found for service 'Current Load' on host 'localhost' (config file '/opt/nagios/etc/objects/localhost.cfg', starting on line 112)
+[1613573450] Successfully launched command file worker with pid 27
+[1613573520] SERVICE ALERT: viewadmin110;Jenkins;WARNING;SOFT;1;HTTP WARNING: HTTP/1.1 403 Forbidden - 1530 bytes in 0.003 second response time
+[1613573580] SERVICE ALERT: viewadmin110;Jenkins;WARNING;SOFT;2;HTTP WARNING: HTTP/1.1 403 Forbidden - 1530 bytes in 0.002 second response time
+[1613573640] SERVICE ALERT: viewadmin110;Jenkins;WARNING;SOFT;3;HTTP WARNING: HTTP/1.1 403 Forbidden - 1530 bytes in 0.002 second response time
+[1613573700] SERVICE ALERT: viewadmin110;Jenkins;WARNING;HARD;4;HTTP WARNING: HTTP/1.1 403 Forbidden - 1530 bytes in 0.002 second response time
+[1613574632] EXTERNAL COMMAND: SEND_CUSTOM_SVC_NOTIFICATION;localhost;PING;0;Nagios Admin;HOLA PRUEBA
+[1613574632] SERVICE NOTIFICATION: nagiosadmin;localhost;PING;CUSTOM (OK);notify-service-by-email;PING OK - Packet loss = 0%, RTA = 0.09 ms;Nagios Admin;HOLA PRUEBA
+[1613574693] SERVICE NOTIFICATION: nagiosadmin;viewadmin110;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
