@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+  nagios:
+    image: manios/nagios:latest
+    volumes:
+      - ./etc/:/opt/nagios/etc/
+      - ./var/:/opt/nagios/var/
+      - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf
+      - ./customplugins/:/opt/Custom-Nagios-Plugins/
+    ports:
+      - "8080:80"
+    environment:
+      - NAGIOSADMIN_USER=nagiosadmin
+      - NAGIOSADMIN_PASS=nagios    
+
+volumes:
+    nagiosetc:
+    nagiosvar:
+    nagiosssmtp:
+    customplugins:
